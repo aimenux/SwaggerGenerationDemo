@@ -10,6 +10,6 @@
         <MSBuildTreatWarningsAsErrors>true</MSBuildTreatWarningsAsErrors>
         <CodeAnalysisTreatWarningsAsErrors>true</CodeAnalysisTreatWarningsAsErrors>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
-        <NoWarn>$(NoWarn);</NoWarn>
+        <NoWarn>$(NoWarn);CS1591;</NoWarn>
     </PropertyGroup>
 </Project>
