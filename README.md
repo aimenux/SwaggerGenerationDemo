@@ -1,3 +1,5 @@
+[![.NET](https://github.com/aimenux/SwaggerGenerationDemo/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/aimenux/SwaggerGenerationDemo/actions/workflows/ci.yml)
+
 # SwaggerGenerationDemo
 ```
 Generating open api specification at build time and run time
