@@ -1,0 +1,30 @@
+<Solution>
+  <Folder Name="/files/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="global.json" />
+    <File Path="Directory.Packages.props" />
+    <File Path="README.md" />
+    <File Path=".gitignore" />
+  </Folder>
+  <Folder Name="/src/" />
+  <Folder Name="/src/ControllerApi/">
+    <Project Path="src/ControllerApi/Application/Application.csproj" />
+    <Project Path="src/ControllerApi/Domain/Domain.csproj" />
+    <Project Path="src/ControllerApi/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/ControllerApi/Presentation/Presentation.csproj" />
+  </Folder>
+  <Folder Name="/src/MinimalApi/">
+    <Project Path="src/MinimalApi/Application/Application.csproj" />
+    <Project Path="src/MinimalApi/Domain/Domain.csproj" />
+    <Project Path="src/MinimalApi/Infrastructure/Infrastructure.csproj" />
+    <Project Path="src/MinimalApi/Presentation/Presentation.csproj" />
+  </Folder>
+  <Folder Name="/test/" />
+  <Folder Name="/test/ControllerApi/">
+    <Project Path="test/ControllerApi.Tests/ControllerApi.Tests.csproj" />
+  </Folder>
+  <Folder Name="/test/MinimalApi/">
+    <Project Path="test/MinimalApi.Tests/MinimalApi.Tests.csproj" />
+  </Folder>
+</Solution>
