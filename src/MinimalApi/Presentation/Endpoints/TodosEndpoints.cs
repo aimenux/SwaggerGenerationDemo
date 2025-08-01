@@ -32,8 +32,7 @@ public static class TodosEndpoints
             .WithName("GetTodos")
             .WithSummary("Retrieves a list of todos")
             .WithDescription("Gets all todos, optionally filtered by category")
-            .Produces<IEnumerable<Todo>>(contentType: "application/json")
-            .MapToApiVersion(1.0);
+            .Produces<IEnumerable<Todo>>(contentType: "application/json");
 
         group
             .MapGet("{id}",

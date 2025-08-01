@@ -39,7 +39,7 @@ public class TodosController : ControllerBase
     [ProducesResponseType(typeof(Todo), StatusCodes.Status200OK)]
     [MapToApiVersion(2.0)]
     [HttpGet("{id}")]
-    public async Task<Todo> GetTodoV1Async([FromRoute] string id, CancellationToken cancellationToken)
+    public async Task<Todo> GetTodoAsync([FromRoute] string id, CancellationToken cancellationToken)
     {
         var todo = await _todoService.GetTodoAsync(id, cancellationToken);
         return todo;

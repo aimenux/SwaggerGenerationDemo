@@ -19,8 +19,8 @@
     <RemoveDir Directories="$(OpenApiOutput)" />
     <MakeDir Directories="$(OpenApiOutput) " />
     <Exec Command="dotnet tool restore" />
-    <Exec Command="dotnet swagger tofile --output $(OpenApiOutput)\swagger.v1.json $(OutputPath)\$(AssemblyName).dll v1" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=Development" />
-    <Exec Command="dotnet swagger tofile --output $(OpenApiOutput)\swagger.v2.json $(OutputPath)\$(AssemblyName).dll v2" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=Development" />
+    <Exec Command="dotnet swagger tofile --output $(OpenApiOutput)/oas-v1.json $(OutputPath)/$(AssemblyName).dll v1" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=Development" />
+    <Exec Command="dotnet swagger tofile --output $(OpenApiOutput)/oas-v2.json $(OutputPath)/$(AssemblyName).dll v2" EnvironmentVariables="ASPNETCORE_ENVIRONMENT=Development" />
   </Target> 
 
 </Project>
