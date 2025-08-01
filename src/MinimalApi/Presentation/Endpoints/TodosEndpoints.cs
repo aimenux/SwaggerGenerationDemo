@@ -8,14 +8,14 @@ namespace Presentation.Endpoints;
 public static class TodosEndpoints
 {
     public static IEndpointRouteBuilder MapTodosEndpoints(this IEndpointRouteBuilder app)
-    {        
+    {
         var versions = app.NewApiVersionSet()
             .HasApiVersion(new ApiVersion(1.0))
             .HasApiVersion(new ApiVersion(2.0))
             .HasDeprecatedApiVersion(new ApiVersion(1.0))
             .ReportApiVersions()
             .Build();
-        
+
         var group = app
             .MapGroup("api/v{version:apiVersion}/todos")
             .WithApiVersionSet(versions)

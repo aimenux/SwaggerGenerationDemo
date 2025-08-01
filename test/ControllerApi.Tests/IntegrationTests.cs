@@ -26,7 +26,7 @@ public class IntegrationTests
         response.StatusCode.Should().Be(HttpStatusCode.OK);
         responseBody.Should().NotBeNullOrWhiteSpace();
     }
-    
+
     [Theory]
     [InlineData("api/v2/todos/1")]
     [InlineData("api/v2/todos/2")]
@@ -44,7 +44,7 @@ public class IntegrationTests
         response.StatusCode.Should().Be(HttpStatusCode.OK);
         responseBody.Should().NotBeNullOrWhiteSpace();
     }
-    
+
     [Theory]
     [InlineData("api/v1/todos/1")]
     [InlineData("api/v1/todos/2")]
